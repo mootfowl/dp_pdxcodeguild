@@ -105,6 +105,5 @@ reverse(a_mess_of_numbers)
 
 print("\nProblem 9: Write a function to find all common elements between two lists.\n")
 
-
-def common_elements(nums1, nums2)
+def common_elements(nums1, nums2):
 
