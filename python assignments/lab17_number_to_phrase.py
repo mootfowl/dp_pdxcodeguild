@@ -15,6 +15,7 @@ ones = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 
 teens = ['zero', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
 tens = ['zero', 'ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
 
+
 def number_to_phrase(number):
     hundreds_index = number // 100
     tens_index = (number % 100) // 10
@@ -27,5 +28,5 @@ def number_to_phrase(number):
         print(tens[tens_index], ones[ones_index])
 
 
-number = int(input("Pick a number between 0 and 999 > "))
-number_to_phrase(number)
+num = int(input("Pick a number between 0 and 999 > "))
+number_to_phrase(num)

@@ -24,7 +24,7 @@ print("\nProblem 2: Convert input strings to lowercase without any surrounding w
 
 def lower_case(clean_up):
     lowered = clean_up.lower()
-    stripped = lowered.strip('     ')
+    stripped = lowered.strip()
     print(stripped)
 
 
@@ -53,8 +53,11 @@ print("\nProblem 4: Write a function using random.randint and subscription to ge
 
 
 def random_element(a):
-    x = random.randint(0,len(a)-1)
+    x = random.randint(0, len(a)-1)
     print(a[x])
+
+    # Ternary operator: return value1 if condition else value2
+    # return a if a > b else b
 
 
 fruits = ['apples', 'bananas', 'pears']

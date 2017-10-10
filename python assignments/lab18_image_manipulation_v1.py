@@ -21,9 +21,10 @@ pixels = img.load()
 for i in range(width):
     for j in range(height):
         r, g, b = pixels[i, j]
-        r = (int(0.299 * r)) + (int(0.587 * g)) + (int(0.114 * b))
-        g = (int(0.299 * r)) + (int(0.587 * g)) + (int(0.114 * b))
-        b = (int(0.299 * r)) + (int(0.587 * g)) + (int(0.114 * b))
+        y = (int(0.299 * r)) + (int(0.587 * g)) + (int(0.114 * b))
+        r = y
+        g = y
+        b = y
         pixels[i, j] = (r, g, b)
 
 img.show()
