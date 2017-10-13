@@ -21,8 +21,8 @@ Check if the two are equal
 '''
 
 def check_palindrome(word):
-    reversed = ((word[::-1]).lower())
-    return reversed == word.lower()
+    reversed = ((word[::-1]).lower()) # reverses the string
+    return reversed == word.lower() # boolean check
 
 
 prompt = input("Enter a word to check if it is a palindrome. > ")
