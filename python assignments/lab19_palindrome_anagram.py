@@ -37,6 +37,6 @@ def check_anagram(word1, word2):
     return word1_list == word2_list
 
 
-promptA = input("Enter the first word. > ")
+promptA = input("Enter the first word. > ").lower()
 promptB = input("Enter the second word. > ")
 print(check_anagram(promptA, promptB))

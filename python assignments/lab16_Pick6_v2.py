@@ -26,23 +26,26 @@ def are_you_feeling_lucky(attempts):
 
         # Compares the ticket numbers at each index (0-5) with the corresponding winning numbers.
         # If they match, they are added to the matching numbers list.
-        if ticket_numbers[0] == winning_numbers[0]:
-            matching_numbers.append(ticket_numbers[0])
-
-        if ticket_numbers[1] == winning_numbers[1]:
-            matching_numbers.append(ticket_numbers[1])
-
-        if ticket_numbers[2] == winning_numbers[2]:
-            matching_numbers.append(ticket_numbers[2])
-
-        if ticket_numbers[3] == winning_numbers[3]:
-            matching_numbers.append(ticket_numbers[3])
-
-        if ticket_numbers[4] == winning_numbers[4]:
-            matching_numbers.append(ticket_numbers[4])
-
-        if ticket_numbers[5] == winning_numbers[5]:
-            matching_numbers.append(ticket_numbers[5])
+        # if ticket_numbers[0] == winning_numbers[0]:
+        #     matching_numbers.append(ticket_numbers[0])
+        #
+        # if ticket_numbers[1] == winning_numbers[1]:
+        #     matching_numbers.append(ticket_numbers[1])
+        #
+        # if ticket_numbers[2] == winning_numbers[2]:
+        #     matching_numbers.append(ticket_numbers[2])
+        #
+        # if ticket_numbers[3] == winning_numbers[3]:
+        #     matching_numbers.append(ticket_numbers[3])
+        #
+        # if ticket_numbers[4] == winning_numbers[4]:
+        #     matching_numbers.append(ticket_numbers[4])
+        #
+        # if ticket_numbers[5] == winning_numbers[5]:
+        #     matching_numbers.append(ticket_numbers[5])
+        for i in range(6):
+            if ticket_numbers[i] == winning_numbers[i]:
+                matching_numbers.append(ticket_numbers[i])
 
         print(f"You matched {matching_numbers}.")
 

@@ -62,9 +62,12 @@ def is_sorted(nums):
 
 def bogosort(nums):
     set = random_list(nums) # Calls the random function to generate a list of length nums
+    counter = 0
     while is_sorted(shuffle(set)) != True: # Loops through the shuffle and is_sorted functions until True is returned
         is_sorted(shuffle(set))
+        counter += 1
+    return counter
 
-bogosort(8)
+print(bogosort(5))
 
 # print(is_sorted(shuffle(random_list(5))))
