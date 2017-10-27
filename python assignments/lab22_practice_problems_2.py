@@ -81,7 +81,7 @@ print(merge(listA, listB))
 # Problem 7: Write a function that returns True if a number within 10 of 100.
 
 def near_100(num):
-    if num > 90 and num < 110:
+    if num > 90 and num < 100:
         return True
     else:
         return False
@@ -95,8 +95,9 @@ import random
 
 def missing_char(word):
     missing_list = []
-    for i in range(len(word)):
-        missing_list.append(word.pop[i])
+    word_list = word.split()
+    for i in range (0, len(word_list)):
+        missing_list.append(word_list.pop[i])
     return missing_list
 
 print(missing_char('kitten'))
