@@ -19,6 +19,9 @@ with open('war_of_the_worlds_lab25.txt') as f:
 x = contents.lower().replace('.', '').replace('?', '').replace('-', ' ').replace(',', '').replace('  ', ' ').replace(':', ' ')
 individual_words = x.split() # Converts the string to a list of words
 
+#for char in '.?-, :':
+#    x = x.replace(char, '')
+
 # print(x)
 
 word_count = {}
